@@ -19,7 +19,6 @@ jobs:
       matrix:
         os: [ macos-26 ]   # the formulae here are macOS-only
     runs-on: ${{ matrix.os }}
-    container: ${{ fromJSON(toJSON(matrix.container)) }} # zizmor: ignore[unpinned-images]
     permissions:
       actions: read
       checks: read
